@@ -40,7 +40,7 @@ class CheckCopyrightWalker extends Lint.RuleWalker {
     super.visitSourceFile(node);
   }
 
-  private hasPotentialRangeAndIsCopyright(copyrightString, copyright, possibleYearPotentialRanges): boolean {
+  private hasPotentialRangeAndIsCopyright(copyrightString: string, copyright: string, possibleYearPotentialRanges: string[]): boolean {
     return possibleYearPotentialRanges.some(yearRange => {
       return copyright === copyrightString.replace(/%%%/, yearRange);
     });
