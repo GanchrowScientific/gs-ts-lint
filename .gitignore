@@ -1,5 +1,7 @@
 *.js
 *.map
 *.swp
+package-lock.json
 node_modules
 npm-debug.log
+tsconfig.tsbuildinfo
